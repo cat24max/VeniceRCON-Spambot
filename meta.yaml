@@ -1,0 +1,18 @@
+name: "Spambot"
+description: "Spams your players with annoying messages"
+version: "1.0.0"
+backend: "BF3"
+entry: "index.js"
+vars:
+  - name: "interval"
+    description: "interval between messages in seconds"
+    type: "number"
+    default: 120
+  - name: "randomOrder"
+    description: "If checked, messages will be selected at random. If not, messages will be sent in order."
+    type: "boolean"
+    default: false
+  - name: "messages"
+    description: "messages to send"
+    type: "strings"
+    default: ["Spambot for VeniceRCON has not been configured"]
