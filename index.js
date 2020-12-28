@@ -15,6 +15,6 @@ module.exports = ({ config, battlefield }) => {
     battlefield.say(message, ["all"])
   }
 
-  if(config.messages.length === 0)
+  if(config.messages.length !== 0)
     setInterval(() => sendMessage(), config.interval * 1000)
 }
